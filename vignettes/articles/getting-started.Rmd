@@ -1,0 +1,111 @@
+---
+title: "Getting Started with moodleR"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Getting Started with the moodleR package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  warning = FALSE,
+  message = FALSE
+)
+```
+
+This vignette assumes that you have already been able to set up the connection to a Moodle Database and created a local cache (if chosen).
+
+```{r setup}
+library(moodleR)
+library(ggplot2)
+```
+
+## Data access functions
+
+Learning analytics practitioners working with LMS data will often be interested in a sub-set of the available tables with relevant references added. These can be accessed through several mdl_* functions which will connect to the relevant table(s) and return a reference to the data. Currently the package supports curated access through the following functions:
+
+* `mdl_courses()`
+* `mdl_forum_posts()`
+* `mdl_grades()`
+* `mdl_log()`
+* `mdl_users()`
+
+
+For example:
+
+```{r, message=FALSE}
+my_grades <- mdl_grades()
+```
+
+creates an R object named `my_grades` containing the dbplyr reference to the table in question. 
+
+## Summary functions
+
+The R generic `summary` function is implemented with sensible defaults so that:
+
+```{r}
+summary(my_grades)
+```
+
+provides useful information for the learning analytics practitioner.
+
+## Plot functions
+
+Generic plot functions are also provided for all data-access objects:
+
+```{r}
+plot(my_grades)
+```
+
+The plot functions return a ggplot by default. If you prefer base graphics you can call the function thus:
+
+```{r}
+plot(my_grades, use_base_graphics = TRUE)
+```
+
+
+## Additional columns
+
+For convenience some additional columns have been added to the tables. These are all snake_case and are thus easy to spot:
+
+```{r}
+library(dplyr)
+my_grades %>% 
+  select(contains("_")) %>% 
+  colnames()
+```
+
+## Objects of class dbplyr
+
+The return value from the data-access functions are also dbplyr tables so dbplyr verbs and operation work on them as well. For example:
+
+```{r}
+my_grades %>% 
+  filter(courseid == 4957) %>% 
+  summary()
+```
+
+```{r, warning=FALSE}
+my_grades %>% 
+  filter(courseid == 4957) %>% 
+  plot()
+```
+
+## Using ggplot objects
+
+Since the return value of a plot function is a ggplot object it is of course possible to add and/or manipulate the plot using the syntax from the ggplot2 package. For example by annotating the plot:
+
+```{r}
+my_plot <- mdl_grades() %>% 
+  plot()
+my_plot +
+  annotate("text",.45,10^5, label="Passing Grade",cex=5)+
+  annotate("segment",x=.6,y=10^5,xend=.6,yend=0, lty=2)
+  
+  
+```
+
+
