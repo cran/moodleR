@@ -1,7 +1,7 @@
-73e62d0f9115fdf4532beaa6138f2a89 *DESCRIPTION
+ab112811323089f034419750aef82e1b *DESCRIPTION
 e0d4ed26eb20442600bcbc81220eca34 *LICENSE
 6d708c2b7fd20dc86c3c798a3c454234 *NAMESPACE
-69e30a662d1a39cf494ff9db9015f0fd *NEWS.md
+42140b58d922bd90fa447fe2d36d8ebf *NEWS.md
 3bf6b4fa74bb6c5081aec1d50e065657 *R/check_mdl_cache.R
 7b2eae18c52afc9d8e75cfe14af5eee7 *R/example_config_file.R
 7ecbab6cb1bb38237cfb94358d74c910 *R/generic_plot_functions.R
@@ -24,7 +24,7 @@ dac6a305a9710a5a9053b61d3825bd1e *R/query_get_grades.R
 38ade7ce89eff24b2840ea41032830b4 *R/query_get_posts.R
 30f5c9bcef5b3183ef258d793c75b4fd *R/zzz.R
 1191bb28476641a38aecf6e42268976e *README.md
-f90302510dc459cb573285dce08910d8 *build/vignette.rds
+3bf66d90ea9a37173a4b8528678129b6 *build/vignette.rds
 cd0f2f421bdea9b550e3ddf6b647ad57 *inst/doc/setup.R
 1373f18ed6b637076d30559e1eb75262 *inst/doc/setup.Rmd
 92fca5317434806b444a119a8f63b55d *inst/doc/setup.html
@@ -58,7 +58,7 @@ f2d42cce00a5f2687f993fa61cc8dba2 *man/mdl_grades_query.Rd
 8190c84a82adb83535927219c4334b8d *man/mdl_log.Rd
 6dda32cc528939cfdc10243bddbb72ee *man/mdl_posts_query.Rd
 dab2bc1cd4b6cc20b00d5dfe5fe73e45 *man/mdl_users.Rd
-bd3e1eda0f6078bf73df69d1622a7d8a *man/moodleR-package.Rd
+77b10f8d291f828305d56a6ccfaea585 *man/moodleR-package.Rd
 f0b0d8eea49281e3abc71fff99ad8fee *man/plot.mdl_forum_posts.Rd
 8e6e02127644613cf660e388d9de342f *man/plot.mdl_grades.Rd
 37e22ae7abed954a89274232f494fcbd *man/print.mdl_courses_summary.Rd
