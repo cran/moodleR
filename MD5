@@ -1,7 +1,7 @@
-ab112811323089f034419750aef82e1b *DESCRIPTION
+9c3cdd4c3edf3aad146aa89448e3eb8f *DESCRIPTION
 e0d4ed26eb20442600bcbc81220eca34 *LICENSE
 6d708c2b7fd20dc86c3c798a3c454234 *NAMESPACE
-42140b58d922bd90fa447fe2d36d8ebf *NEWS.md
+b678de959b58cb75de048431292b8429 *NEWS.md
 3bf6b4fa74bb6c5081aec1d50e065657 *R/check_mdl_cache.R
 7b2eae18c52afc9d8e75cfe14af5eee7 *R/example_config_file.R
 7ecbab6cb1bb38237cfb94358d74c910 *R/generic_plot_functions.R
@@ -22,12 +22,12 @@ aacf7d72777c907f4133ec08bfe07429 *R/moodler.R
 3dd39ccb172c6aac34f46269c0390ebd *R/query_get_enrolments.R
 dac6a305a9710a5a9053b61d3825bd1e *R/query_get_grades.R
 38ade7ce89eff24b2840ea41032830b4 *R/query_get_posts.R
-30f5c9bcef5b3183ef258d793c75b4fd *R/zzz.R
-1191bb28476641a38aecf6e42268976e *README.md
-3bf66d90ea9a37173a4b8528678129b6 *build/vignette.rds
-cd0f2f421bdea9b550e3ddf6b647ad57 *inst/doc/setup.R
-1373f18ed6b637076d30559e1eb75262 *inst/doc/setup.Rmd
-92fca5317434806b444a119a8f63b55d *inst/doc/setup.html
+e9145ad4be36d1d38083dcc26cef7548 *R/zzz.R
+5a0540e5935d5cf08cb046595368f188 *README.md
+cecdd0fff1a32ab5f650890ba3f8e78f *build/vignette.rds
+231f4768302125ec5e04c2277a7fdf3b *inst/doc/setup.R
+4e050b3187fbc6dfd6d315f3bfb07a33 *inst/doc/setup.Rmd
+1d8984a50ff5b1ac9d80609859bf0a35 *inst/doc/setup.html
 3d1001c59502c1e366f7a58978c420f9 *inst/templates/config_example.yml
 c095e410e0a01d5428ff0dbba370ec61 *man/check_mdl_cache.Rd
 2cab325d9a1fcd453fd6451b8b63ed82 *man/example_config_yml.Rd
@@ -58,7 +58,7 @@ f2d42cce00a5f2687f993fa61cc8dba2 *man/mdl_grades_query.Rd
 8190c84a82adb83535927219c4334b8d *man/mdl_log.Rd
 6dda32cc528939cfdc10243bddbb72ee *man/mdl_posts_query.Rd
 dab2bc1cd4b6cc20b00d5dfe5fe73e45 *man/mdl_users.Rd
-77b10f8d291f828305d56a6ccfaea585 *man/moodleR-package.Rd
+4f28f793fbc4136b44aa16f291c60784 *man/moodleR-package.Rd
 f0b0d8eea49281e3abc71fff99ad8fee *man/plot.mdl_forum_posts.Rd
 8e6e02127644613cf660e388d9de342f *man/plot.mdl_grades.Rd
 37e22ae7abed954a89274232f494fcbd *man/print.mdl_courses_summary.Rd
@@ -79,4 +79,4 @@ e0ae58883e74eb059cecc1f46652b27c *vignettes/articles/calculating-time-on-task.Rm
 f3ce3647e33f6b48bd92982800270322 *vignettes/articles/forecast-example.Rmd
 9b48dcdcf9d55fa710c59f9b18c22d5d *vignettes/articles/getting-started.Rmd
 a8deafc31fea73a4497c5b6fca615d0b *vignettes/articles/simple-predictive-model.Rmd
-1373f18ed6b637076d30559e1eb75262 *vignettes/setup.Rmd
+4e050b3187fbc6dfd6d315f3bfb07a33 *vignettes/setup.Rmd
